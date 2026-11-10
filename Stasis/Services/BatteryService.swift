@@ -10,9 +10,9 @@ enum XPCError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .helperUnavailable:
-            "XPC helper is unavailable"
+            String(localized: "XPC helper is unavailable")
         case .commandFailed(let message):
-            "Command failed: \(message)"
+            String(localized: "Command failed: \(message)")
         }
     }
 }
@@ -326,7 +326,7 @@ class BatteryService {
                     continuation.resume()
                 } else {
                     continuation.resume(
-                        throwing: XPCError.commandFailed(errorMessage ?? "Unknown error"))
+                        throwing: XPCError.commandFailed(errorMessage ?? String(localized: "Unknown error")))
                 }
             }
         }

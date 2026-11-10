@@ -233,13 +233,13 @@ class ChargeManager {
             desiredCharging = false
             desiredAdapter = Defaults[.automaticDischarge] ? false : true
             desiredLED = Defaults[.manageMagSafeLED] ? .green : nil
-            chargingStateReason = "Battery is above the charge limit of \(chargeLimit)%"
+            chargingStateReason = String(localized: "Battery is above the charge limit of \(chargeLimit)%")
         } else if batteryPercentage == chargeLimit {
             hasReachedChargeLimit = true
             desiredCharging = false
             desiredAdapter = true
             desiredLED = Defaults[.manageMagSafeLED] ? .green : nil
-            chargingStateReason = "Battery has reached the charge limit of \(chargeLimit)%"
+            chargingStateReason = String(localized: "Battery has reached the charge limit of \(chargeLimit)%")
         } else if Defaults[.sailingMode] {
             let sailingThreshold = chargeLimit - Defaults[.sailingModeLimit]
             let inSailingRange = batteryPercentage >= sailingThreshold
@@ -248,7 +248,9 @@ class ChargeManager {
                 desiredCharging = false
                 desiredAdapter = true
                 desiredLED = Defaults[.manageMagSafeLED] ? .green : nil
-                chargingStateReason = "Sailing mode is maintaining charge below \(chargeLimit)%"
+                chargingStateReason = String(
+                    localized: "Sailing mode is maintaining charge below \(chargeLimit)%"
+                )
             } else {
                 let droppedOutOfSailingRange = !inSailingRange && hasReachedChargeLimit
                 hasReachedChargeLimit = false
@@ -256,27 +258,33 @@ class ChargeManager {
                 desiredAdapter = true
                 desiredLED = Defaults[.manageMagSafeLED] ? .orange : nil
                 if inSailingRange {
-                    chargingStateReason = "Charging to reach charge limit of \(chargeLimit)%"
+                    chargingStateReason = String(
+                        localized: "Charging to reach charge limit of \(chargeLimit)%"
+                    )
                 } else if droppedOutOfSailingRange {
-                    chargingStateReason =
-                        "Battery dropped below sailing threshold of \(sailingThreshold)%"
+                    chargingStateReason = String(
+                        localized: "Battery dropped below sailing threshold of \(sailingThreshold)%"
+                    )
                 } else {
-                    chargingStateReason = "Battery is below the charge limit of \(chargeLimit)%"
+                    chargingStateReason = String(
+                        localized: "Battery is below the charge limit of \(chargeLimit)%"
+                    )
                 }
             }
         } else {
             desiredCharging = true
             desiredAdapter = true
             desiredLED = Defaults[.manageMagSafeLED] ? .orange : nil
-            chargingStateReason = "Battery is below the charge limit of \(chargeLimit)%"
+            chargingStateReason = String(localized: "Battery is below the charge limit of \(chargeLimit)%")
         }
 
         if Defaults[.enableHeatProtectionMode]
             && controlState.batteryTemperature > Double(Defaults[.heatProtectionLimit])
         {
             desiredCharging = false
-            chargingStateReason =
-                "Battery temperature exceeds \(Defaults[.heatProtectionLimit])°C"
+            chargingStateReason = String(
+                localized: "Battery temperature exceeds \(Defaults[.heatProtectionLimit])°C"
+            )
             if Defaults[.manageMagSafeLED] {
                 desiredLED = Defaults[.heatProtectionMagSafeLEDState]
             }
@@ -318,8 +326,8 @@ class ChargeManager {
         let charging = !forceDischargeActive && batteryPercentage < nativeLimit
         let reason =
             charging
-            ? "Battery is below the charge limit of \(nativeLimit)%"
-            : "Battery has reached the charge limit of \(nativeLimit)%"
+            ? String(localized: "Battery is below the charge limit of \(nativeLimit)%")
+            : String(localized: "Battery has reached the charge limit of \(nativeLimit)%")
         sendChargingStateNotification(charging: charging, reason: reason)
 
         if capabilities.adapterControl {

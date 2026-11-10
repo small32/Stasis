@@ -11,10 +11,10 @@ class MenuViewModel {
     private let bootTimestamp: Date?
 
     var batteryPercentageText: String = "0%"
-    var powerSourceText: String = "Battery"
-    var timeRemainingText: String = "Calculating..."
+    var powerSourceText: String = String(localized: "Battery")
+    var timeRemainingText: String = String(localized: "Calculating...")
     var uptimeText: String = "0m"
-    var batteryModeText: String = "Unknown"
+    var batteryModeText: String = String(localized: "Unknown")
     var batteryTemperatureText: String = "0°C"
     var externalInputText: String = "0V @ 0A"
     var internalInputText: String = "0V @ 0A"
@@ -118,20 +118,20 @@ class MenuViewModel {
 
         switch derivedPowerSource {
         case .battery:
-            powerSourceText = "Battery"
+            powerSourceText = String(localized: "Battery")
         case .acAdapter:
-            powerSourceText = "Power Adapter"
+            powerSourceText = String(localized: "Power Adapter")
         case .both:
-            powerSourceText = "Battery & Power Adapter"
+            powerSourceText = String(localized: "Battery & Power Adapter")
         }
 
         let formatted = formatTimeRemaining(minutes: metrics.timeRemaining)
         if !formatted.isEmpty {
             timeRemainingText = formatted
         } else if metrics.externalConnected && !metrics.isCharging {
-            timeRemainingText = "Not Charging"
+            timeRemainingText = String(localized: "Not Charging")
         } else {
-            timeRemainingText = "Calculating..."
+            timeRemainingText = String(localized: "Calculating...")
         }
 
         updateUptimeText()
@@ -142,14 +142,14 @@ class MenuViewModel {
         if metrics.externalConnected {
             if metrics.isCharging {
                 chargingMode = .charging
-                batteryModeText = "Charging"
+                batteryModeText = String(localized: "Charging")
             } else {
                 chargingMode = .pluggedIn
-                batteryModeText = "Plugged In (Not Charging)"
+                batteryModeText = String(localized: "Plugged In (Not Charging)")
             }
         } else {
             chargingMode = .discharging
-            batteryModeText = "Discharging"
+            batteryModeText = String(localized: "Discharging")
         }
 
         batteryTemperatureText =
@@ -189,7 +189,7 @@ class MenuViewModel {
 
     private func updateUptimeText() {
         guard let bootTimestamp else {
-            uptimeText = "Unknown"
+            uptimeText = String(localized: "Unknown")
             return
         }
 

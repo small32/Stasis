@@ -42,7 +42,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充电器"
+            "value" : "电源适配器"
           }
         }
       }
@@ -82,7 +82,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这台设备不支持充电器控制。"
+            "value" : "此设备不支持电源适配器控制。"
           }
         }
       }
@@ -122,7 +122,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充电器功率指标"
+            "value" : "电源适配器功率指标"
           }
         }
       }
@@ -162,7 +162,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "高级设置"
+            "value" : "高级"
           }
         }
       }
@@ -174,11 +174,24 @@
             "state" : "translated",
             "value" : "Cho phép Stasis trong Cài đặt hệ thống → Mục đăng nhập để tiếp tục."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在“系统设置 → 登录项”中批准 Stasis 后继续。"
+          }
         }
       }
     },
     "Approve Stasis in System Settings → Login Items." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在“系统设置 → 登录项”中批准 Stasis。"
+          }
+        }
+      }
     },
     "Automatic discharge" : {
       "localizations" : {
@@ -227,6 +240,12 @@
             "state" : "translated",
             "value" : "Tự động sạc lại khi pin giảm xuống dưới ngưỡng giới hạn sạc"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电量低于充电上限所设定的阈值时，自动恢复充电。"
+          }
         }
       }
     },
@@ -271,7 +290,44 @@
       }
     },
     "Battery %lld percent" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池电量 %lld%"
+          }
+        }
+      }
+    },
+    "Battery & Power Adapter" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池与电源适配器"
+          }
+        }
+      }
+    },
+    "Battery dropped below sailing threshold of %lld%%" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电量已低于 %lld%% 的航行阈值"
+          }
+        }
+      }
+    },
+    "Battery has reached the charge limit of %lld%%" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电量已达到 %lld%% 的充电上限"
+          }
+        }
+      }
     },
     "Battery Health" : {
       "localizations" : {
@@ -309,6 +365,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "电池健康"
+          }
+        }
+      }
+    },
+    "Battery is above the charge limit of %lld%%" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电量已高于 %lld%% 的充电上限"
+          }
+        }
+      }
+    },
+    "Battery is below the charge limit of %lld%%" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电量低于 %lld%% 的充电上限"
           }
         }
       }
@@ -468,7 +544,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "电池测量值"
+            "value" : "电池读数"
           }
         }
       }
@@ -513,12 +589,28 @@
         }
       }
     },
+    "Battery temperature exceeds %lld°C" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电池温度超过 %lld°C"
+          }
+        }
+      }
+    },
     "Blinking Orange Fast" : {
       "localizations" : {
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nhấp nháy cam nhanh"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "橙色快闪"
           }
         }
       }
@@ -529,6 +621,32 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nhấp nháy cam chậm"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "橙色慢闪"
+          }
+        }
+      }
+    },
+    "Calculating..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在计算…"
+          }
+        }
+      }
+    },
+    "Changing the language automatically restarts Stasis." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "切换语言后 Stasis 将自动重启。"
           }
         }
       }
@@ -579,6 +697,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bỏ qua giới hạn sạc"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "临时取消充电上限"
           }
         }
       }
@@ -658,13 +782,20 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这台设备不支持充电管理。"
+            "value" : "此设备不支持充电管理。"
           }
         }
       }
     },
     "charging" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电中"
+          }
+        }
+      }
     },
     "Charging" : {
       "localizations" : {
@@ -701,7 +832,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充电中"
+            "value" : "充电"
           }
         }
       }
@@ -741,13 +872,20 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这台设备不支持充电控制。"
+            "value" : "此设备不支持充电控制。"
           }
         }
       }
     },
     "Charging helper is not installed. Reinstall it in Settings." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电辅助程序未安装，请在“设置”中重新安装。"
+          }
+        }
+      }
     },
     "Charging Paused" : {
       "localizations" : {
@@ -784,7 +922,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充电暂停中"
+            "value" : "已暂停充电"
           }
         }
       }
@@ -824,7 +962,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "恢复充电"
+            "value" : "已恢复充电"
           }
         }
       }
@@ -864,7 +1002,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "恢复充电的数值"
+            "value" : "恢复充电阈值"
           }
         }
       }
@@ -904,7 +1042,17 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充电状态变更"
+            "value" : "充电状态变化"
+          }
+        }
+      }
+    },
+    "Charging to reach charge limit of %lld%%" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在充电以达到 %lld%% 的充电上限"
           }
         }
       }
@@ -944,7 +1092,17 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "再次确认"
+            "value" : "重新检查"
+          }
+        }
+      }
+    },
+    "Command failed: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "命令执行失败：%@"
           }
         }
       }
@@ -984,7 +1142,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "控制Stasis何时发送通知"
+            "value" : "控制 Stasis 发送通知的时机。"
           }
         }
       }
@@ -1024,7 +1182,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充放电次数"
+            "value" : "循环次数"
           }
         }
       }
@@ -1064,7 +1222,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充放电次数"
+            "value" : "循环次数"
           }
         }
       }
@@ -1104,7 +1262,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "仪表板"
+            "value" : "仪表盘"
           }
         }
       }
@@ -1144,7 +1302,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "禁止所有通知"
+            "value" : "关闭所有通知"
           }
         }
       }
@@ -1155,6 +1313,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không ngủ cho đến khi đạt giới hạn sạc"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "达到充电上限前阻止睡眠"
           }
         }
       }
@@ -1206,6 +1370,22 @@
             "state" : "translated",
             "value" : "Xả pin về mức giới hạn khi cắm sạc nếu pin hiện tại cao hơn mức mục tiêu."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接入电源且电量高于目标值时，将电池放电至充电上限。"
+          }
+        }
+      }
+    },
+    "Discharging" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "放电中"
+          }
         }
       }
     },
@@ -1215,6 +1395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hiển thị phần trăm pin bên cạnh hoặc trong biểu tượng thanh menu."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在菜单栏图标旁或图标内显示电池百分比。"
           }
         }
       }
@@ -1266,6 +1452,12 @@
             "state" : "translated",
             "value" : "Bật chế độ thả trôi pin"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用航行模式"
+          }
         }
       }
     },
@@ -1304,7 +1496,17 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充电助手安装失败"
+            "value" : "充电辅助程序安装失败"
+          }
+        }
+      }
+    },
+    "Follow System" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跟随系统"
           }
         }
       }
@@ -1315,6 +1517,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ép xả pin"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "强制放电"
           }
         }
       }
@@ -1394,7 +1602,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在菜单列表中显示的一般系统和电池状态信息。"
+            "value" : "在下拉菜单中显示系统与电池的常规状态信息。"
           }
         }
       }
@@ -1474,7 +1682,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "健康"
+            "value" : "健康度"
           }
         }
       }
@@ -1526,6 +1734,12 @@
             "state" : "translated",
             "value" : "Ẩn"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐藏"
+          }
         }
       }
     },
@@ -1535,6 +1749,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trong biểu tượng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图标内"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语言"
           }
         }
       }
@@ -1574,7 +1804,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在登录时打开"
+            "value" : "登录时启动"
           }
         }
       }
@@ -1614,7 +1844,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "过热保护时的LED状态"
+            "value" : "过热保护时的 LED 状态"
           }
         }
       }
@@ -1654,13 +1884,20 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "为了延长电池寿命限制充电上限"
+            "value" : "限制最高充电量以延长电池寿命。"
           }
         }
       }
     },
     "low power mode" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低电量模式"
+          }
+        }
+      }
     },
     "macOS did not apply the charge limit (expected %@, got %@)." : {
       "localizations" : {
@@ -1669,11 +1906,24 @@
             "state" : "new",
             "value" : "macOS did not apply the charge limit (expected %1$@, got %2$@)."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "macOS 未应用充电上限（预期 %@，实际 %@）。"
+          }
         }
       }
     },
     "macOS does not support a charge limit of %lld%%." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前 macOS 不支持 %lld%% 的充电上限。"
+          }
+        }
+      }
     },
     "MagSafe LED Control" : {
       "localizations" : {
@@ -1710,7 +1960,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "MagSafe LED 的控制"
+            "value" : "MagSafe 指示灯控制"
           }
         }
       }
@@ -1750,7 +2000,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "这台设备不支持MagSafe LED控制"
+            "value" : "此设备不支持 MagSafe 指示灯控制。"
           }
         }
       }
@@ -1790,7 +2040,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充电管理"
+            "value" : "管理充电"
           }
         }
       }
@@ -1830,7 +2080,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "MagSafe LED 管理"
+            "value" : "管理 MagSafe 指示灯"
           }
         }
       }
@@ -1881,6 +2131,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bên cạnh biểu tượng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图标旁"
+          }
+        }
+      }
+    },
+    "Not Charging" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未在充电"
           }
         }
       }
@@ -1960,7 +2226,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "关闭"
+            "value" : "熄灭"
           }
         }
       }
@@ -2000,7 +2266,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "OK"
+            "value" : "好"
           }
         }
       }
@@ -2080,13 +2346,30 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "当电池温度超过临界点时暂定充电"
+            "value" : "电池温度超过阈值时暂停充电。"
           }
         }
       }
     },
     "plugged in" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已接入电源"
+          }
+        }
+      }
+    },
+    "Plugged In (Not Charging)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已接入电源（未充电）"
+          }
+        }
+      }
     },
     "Power" : {
       "localizations" : {
@@ -2123,7 +2406,17 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "电力"
+            "value" : "功率"
+          }
+        }
+      }
+    },
+    "Power Adapter" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电源适配器"
           }
         }
       }
@@ -2163,7 +2456,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "电力分配图"
+            "value" : "功率分配图"
           }
         }
       }
@@ -2255,6 +2548,12 @@
             "state" : "translated",
             "value" : "Ngăn máy Mac chuyển sang chế độ ngủ khi đang sạc đến mức giới hạn. Chế độ ngủ sẽ tự động kích hoạt lại khi đạt mức giới hạn hoặc khi ngắt kết nối bộ sạc."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充至上限前阻止 Mac 进入睡眠；达到上限或断开电源适配器后恢复睡眠。"
+          }
         }
       }
     },
@@ -2293,13 +2592,30 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "终止"
+            "value" : "退出"
           }
         }
       }
     },
     "Reinstall" : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新安装"
+          }
+        }
+      }
+    },
+    "Restart Failed" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重启失败"
+          }
+        }
+      }
     },
     "Sailing Mode" : {
       "localizations" : {
@@ -2307,6 +2623,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chế độ thả trôi pin"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "航行模式"
+          }
+        }
+      }
+    },
+    "Sailing mode is maintaining charge below %lld%%" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "航行模式正将电量维持在 %lld%% 以下"
           }
         }
       }
@@ -2358,6 +2690,12 @@
             "state" : "translated",
             "value" : "Hiển thị trạng thái pin"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示电池状态"
+          }
         }
       }
     },
@@ -2372,7 +2710,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "显示电池百分比"
+            "value" : "显示百分比"
           }
         }
       }
@@ -2383,6 +2721,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngăn chế độ ngủ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "防止睡眠"
           }
         }
       }
@@ -2423,6 +2767,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "启动"
+          }
+        }
+      }
+    },
+    "Stasis could not restart automatically. Quit and reopen Stasis to apply the language change." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stasis 未能自动重启，请退出后重新打开以应用新的语言设置。"
           }
         }
       }
@@ -2582,16 +2936,30 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "温度限制"
+            "value" : "温度上限"
           }
         }
       }
     },
     "The charging helper is not installed. Charge management is paused until it is reinstalled." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "充电辅助程序未安装，重新安装前充电管理已暂停。"
+          }
+        }
+      }
     },
     "The macOS charge limit is unavailable on this Mac." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此 Mac 无法使用 macOS 的充电上限功能。"
+          }
+        }
+      }
     },
     "Threshold below limit" : {
       "localizations" : {
@@ -2599,6 +2967,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ngưỡng dưới giới hạn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低于上限的阈值"
           }
         }
       }
@@ -2650,11 +3024,44 @@
             "state" : "translated",
             "value" : "Thời gian dự kiến xả pin"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "剩余时间"
+          }
         }
       }
     },
     "Unavailable on this version of macOS." : {
-
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前 macOS 版本不支持此功能。"
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未知"
+          }
+        }
+      }
+    },
+    "Unknown error" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未知错误"
+          }
+        }
+      }
     },
     "Uptime" : {
       "localizations" : {
@@ -2703,6 +3110,12 @@
             "state" : "translated",
             "value" : "Dùng phần trăm pin từ phần cứng"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用硬件电量百分比"
+          }
         }
       }
     },
@@ -2712,6 +3125,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sử dụng phần trăm pin thực tế từ phần cứng thay vì giá trị đã được hiệu chuẩn của macOS."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用电池原始电量百分比，而非 macOS 校准后的数值。"
           }
         }
       }
@@ -2751,7 +3170,17 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "视觉图"
+            "value" : "可视化"
+          }
+        }
+      }
+    },
+    "XPC helper is unavailable" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "XPC 辅助程序不可用"
           }
         }
       }

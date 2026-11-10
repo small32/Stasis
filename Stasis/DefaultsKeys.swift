@@ -14,6 +14,7 @@ enum PercentageDisplayLocation: String, Defaults.Serializable, CaseIterable, Ide
 
 extension Defaults.Keys {
     // General
+    static let appLanguage = Key<AppLanguage>("appLanguage", default: .system)
     static let launchAtLogin = Key<Bool>("launchAtLogin", default: false)
 
     // Status Icon

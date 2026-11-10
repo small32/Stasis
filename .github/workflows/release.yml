@@ -127,13 +127,13 @@ jobs:
 
           ### Signing notice
 
-          This build is produced on GitHub-hosted runners with **no Apple Developer signing certificate**, so it is unsigned. After dragging Stasis into `/Applications`, run:
+          This build is produced on GitHub-hosted runners with **no Apple Developer signing certificate**. The binaries carry only an ad-hoc (linker) signature, with no Developer ID and no notarization. After dragging Stasis into `/Applications`, run:
 
           ```
           xattr -cr /Applications/Stasis.app
           ```
 
-          The privileged charging helper is registered through `SMAppService` and normally requires a valid signature. Charge-management features may be limited in this unsigned build. Use a Developer ID signed build for full functionality.
+          The privileged charging helper is registered through `SMAppService` and normally requires a valid Developer ID signature. Charge-management features may be limited in this ad-hoc signed build. Use a properly signed build for full functionality.
           EOF
           if gh release view "$TAG" >/dev/null 2>&1; then
             echo "Release $TAG already exists, replacing assets"

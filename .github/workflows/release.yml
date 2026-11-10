@@ -21,7 +21,7 @@ permissions:
 jobs:
   build:
     name: Build and publish macOS app
-    runs-on: macos-15
+    runs-on: macos-15-intel
     timeout-minutes: 45
     env:
       INPUT_VERSION: ${{ inputs.version }}
@@ -39,7 +39,7 @@ jobs:
           import glob
           import re
 
-          candidates = glob.glob('/Applications/Xcode_*.app')
+          candidates = glob.glob('/Applications/Xcode_26*.app')
           if not candidates:
               raise SystemExit('No versioned Xcode installation found on this runner')
           print(sorted(candidates, key=lambda p: [int(n) for n in re.findall(r'\d+', p)])[-1])
